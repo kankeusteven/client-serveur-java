@@ -1,17 +1,71 @@
-# Client-Server Java
+# Application Client–Serveur Java
 
-Application client-serveur développée en Java avec communication réseau via sockets.
+Application réseau client–serveur développée en Java dans le cadre du cursus ingénieur à l'ESEO Vélizy.  
+Elle illustre les principes de communication réseau, de gestion des connexions et de déploiement distribué.
 
-## Technologies
-- Java
-- Sockets
-- Git / GitHub
+---
 
-## Objectif
-Mettre en place une communication entre un client et un serveur pour échanger des messages via le réseau.
+## Fonctionnalités
+
+- Serveur multi-clients via sockets TCP
+- Échange de messages en temps réel entre client et serveur
+- Gestion des connexions et déconnexions propres
+- Architecture modulaire et versionnée avec Git
+
+---
+
+## Architecture
+
+
+---
+
+## Technologies utilisées
+
+| Technologie | Usage |
+|-------------|-------|
+| Java 17     | Langage principal |
+| Sockets TCP | Communication réseau |
+| Threads     | Gestion multi-clients |
+| Git / GitHub | Versioning et collaboration |
+
+---
 
 ## Lancer le projet
-1. Compiler les fichiers Java
-2. Lancer le serveur
-3. Lancer le client# client-serveur-java
- Application client-serveur Java avec communication réseau via sockets.
+
+### Prérequis
+- Java 17+
+- Git
+
+### Étapes
+
+```bash
+# Cloner le repo
+git clone https://github.com/kankeusteven/client-serveur-java.git
+cd client-serveur-java
+
+# Compiler
+javac Server.java
+javac Client.java
+
+# Lancer le serveur (dans un terminal)
+java Server
+
+# Lancer le client (dans un autre terminal)
+java Client
+```
+
+---
+
+## Ce que j'ai appris
+
+- Implémentation de la communication TCP avec `java.net.Socket`
+- Gestion de plusieurs clients simultanés avec des threads
+- Organisation d'un projet en équipe avec Git (branches, pull requests)
+- Débogage d'incidents réseau (ports, connexions refusées)
+
+---
+
+## Auteur
+
+**Steven Nomessi** — Étudiant Ingénieur Cloud & Infrastructure, ESEO Vélizy  
+[LinkedIn](https://linkedin.com/in/steven-nomessi) · [GitHub](https://github.com/kankeusteven)
